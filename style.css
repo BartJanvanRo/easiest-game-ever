@@ -4,6 +4,7 @@
     overflow-x: hidden;
     text-align: center;
     font-size: 15;
+    overflow: hidden;
 }
 
 .game {
@@ -17,7 +18,7 @@
     width: 20px;
     height: 50px;
     background-color: red;
-    color: rgb(255, 255, 255);
+    /*    color: rgb(255, 255, 255); */
     position: relative;
     top: 150px;
 
@@ -46,14 +47,16 @@
 }
 
 #block {
-    background-color: blue;
+    /*     background-color: blue;
+ */
     width: 20px;
     height: 20px;
     position: relative;
     top: 130px;
     left: 500px;
     animation: block 1s infinite linear;
-    color: aliceblue;
+    /*   color: aliceblue; */
+
 }
 
 @keyframes block {
@@ -68,4 +71,10 @@
 
 p {
     text-align: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }

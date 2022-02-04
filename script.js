@@ -2,7 +2,15 @@ var character = document.getElementById("character");
 var block = document.getElementById("block");
 var counter = 0;
 
-const ArrayRound = ["a", "b", "c", "d"];
+const ArrayRound = ["./img/orange.jpg",
+    "./img/grapes.jpg",
+    "./img/lemon.jpg",
+    "./img/paprika.jpg",
+    "./img/avocado.jpg",
+    "./img/apple"];
+
+
+
 
 
 function jump() {
@@ -21,13 +29,17 @@ var checkDead = setInterval(function () {
         counter = 0;
         block.style.animation = "block 1s infinite linear";
 
-        block.innerHTML = ArrayRound[i];
+        /*   block.innerHTML = ArrayRound[i]; */
     } else {
         counter++;
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter / 100);
+
         console.log(Math.floor(counter / 80))
         let roundReturn = Math.floor(counter / 80)
-        block.innerHTML = ArrayRound[roundReturn];
+        block.innerHTML = `
+        <img src="${ArrayRound[roundReturn]}" alt="">`;
+
+
 
 
 
