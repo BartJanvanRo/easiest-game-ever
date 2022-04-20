@@ -37,7 +37,7 @@ var checkDead = setInterval(function () {
         console.log(Math.floor(counter / 80))
         let roundReturn = Math.floor(counter / 80)
         block.innerHTML = `
-        <img src="${ArrayRound[roundReturn]}" alt="">`;
+        <img src="${ArrayRound[roundReturn]}" alt="no">`;
 
 
 
